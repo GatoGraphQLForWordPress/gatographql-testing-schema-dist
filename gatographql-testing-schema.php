@@ -3,7 +3,7 @@
 Plugin Name: Gato GraphQL - Testing Schema
 Plugin URI: https://github.com/GatoGraphQL/GatoGraphQL
 Description: Addition of elements to the GraphQL schema to test the Gato GraphQL plugin
-Version: 1.0.9
+Version: 1.0.10
 Requires at least: 5.4
 Requires PHP: 7.2
 Author: Gato GraphQL
@@ -49,8 +49,10 @@ add_action(
          * version in the ReleaseWorker when deploying for PROD.
          *
          * @see src/OnDemand/Symplify/MonorepoBuilder/Release/ReleaseWorker/ConvertVersionForProdInPluginMainFileReleaseWorker.php
+         *
+         * @gatographql-readonly-code
          */
-        $extensionVersion = '1.0.9';
+        $extensionVersion = '1.0.10';
         $extensionName = \__('Gato GraphQL - Testing Schema', 'gatographql-testing-schema');
         /**
          * Important: Do not modify the formatting of this PHP code!
@@ -58,6 +60,8 @@ add_action(
          * version in the ReleaseWorker when deploying for PROD.
          *
          * @see src/OnDemand/Symplify/MonorepoBuilder/Release/ReleaseWorker/BumpVersionForDevInPluginMainFileReleaseWorker.php
+         *
+         * @gatographql-readonly-code
          */
         $mainPluginVersionConstraint = '^1.0';
         
@@ -99,9 +103,11 @@ add_action(
          *
          * Important: Do not modify this code!
          * It will be replaced in the CI to append "#{commit hash}"
-         * when generating the plugin. 
+         * when generating the plugin.
+         *
+         * @gatographql-readonly-code
          */
-        $commitHash = 'ae463a3cb9b73203a57caa96f64e975b092ad7dc';
+        $commitHash = '545485f09b220410cba6874918ca716ab2164f23';
 
         // Load Composer’s autoloader
         require_once(__DIR__ . '/vendor/autoload.php');

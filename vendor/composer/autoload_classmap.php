@@ -10,6 +10,7 @@ return array(
     'GatoGraphQL\\TestingSchema\\Constants\\Actions' => $baseDir . '/src/Constants/Actions.php',
     'GatoGraphQL\\TestingSchema\\ContentProcessors\\ExtensionMarkdownContentRetrieverTrait' => $baseDir . '/src/ContentProcessors/ExtensionMarkdownContentRetrieverTrait.php',
     'GatoGraphQL\\TestingSchema\\ExtensionInitializationConfiguration' => $baseDir . '/src/ExtensionInitializationConfiguration.php',
+    'GatoGraphQL\\TestingSchema\\ExtensionMetadata' => $baseDir . '/src/ExtensionMetadata.php',
     'GatoGraphQL\\TestingSchema\\ExtensionStaticHelpers' => $baseDir . '/src/ExtensionStaticHelpers.php',
     'GatoGraphQL\\TestingSchema\\GatoGraphQLExtension' => $baseDir . '/src/GatoGraphQLExtension.php',
     'GatoGraphQL\\TestingSchema\\Module' => $baseDir . '/src/Module.php',

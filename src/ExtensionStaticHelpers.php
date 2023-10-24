@@ -9,12 +9,25 @@ use GatoGraphQL\GatoGraphQL\StaticHelpers\PluginVersionHelpers;
 
 class ExtensionStaticHelpers
 {
-    public static function getGitHubRepoDocsRootPathURL(): string
+    private static function getGitHubRepoDocsRootURL(): string
+    {
+        return sprintf(
+            'https://raw.githubusercontent.com/%s/%s',
+            ExtensionMetadata::DOCS_GITHUB_REPO_OWNER,
+            ExtensionMetadata::DOCS_GITHUB_REPO_NAME
+        );
+    }
+
+    private static function getGitHubRepoDocsBranchOrTag(): string
     {
         $extensionPluginVersion = PluginApp::getExtension(GatoGraphQLExtension::class)->getPluginVersion();
-        $tag = PluginVersionHelpers::isDevelopmentVersion($extensionPluginVersion)
-            ? 'master'
+        return PluginVersionHelpers::isDevelopmentVersion($extensionPluginVersion)
+            ? ExtensionMetadata::DOCS_GIT_BASE_BRANCH
             : $extensionPluginVersion;
-        return 'https://raw.githubusercontent.com/GatoGraphQL/GatoGraphQL/' . $tag . '/layers/GatoGraphQLForWP/plugins/testing-schema/';
+    }
+
+    public static function getGitHubRepoDocsRootPathURL(): string
+    {
+        return self::getGitHubRepoDocsRootURL() . '/' . self::getGitHubRepoDocsBranchOrTag() . '/layers/GatoGraphQLForWP/plugins/testing-schema';
     }
 }
