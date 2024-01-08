@@ -108,7 +108,7 @@ add_action(
          *
          * @gatographql-readonly-code
          */
-        $commitHash = '8154ebe4a1f0a5316e1b86dc6244c47898da8dfc';
+        $commitHash = '6da5c46360805e6eb1f0039804838821e30d3735';
 
         // Load Composer’s autoloader
         require_once(__DIR__ . '/vendor/autoload.php');
