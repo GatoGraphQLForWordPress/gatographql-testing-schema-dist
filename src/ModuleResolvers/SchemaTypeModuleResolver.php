@@ -14,12 +14,9 @@ class SchemaTypeModuleResolver extends AbstractModuleResolver
     use ModuleResolverTrait;
     use SchemaTypeModuleResolverTrait;
 
-    public const SCHEMA_TESTING = GatoGraphQLExtension::NAMESPACE . '\schema-testing';
+    public final const SCHEMA_TESTING = GatoGraphQLExtension::NAMESPACE . '\schema-testing';
 
-    /**
-     * @var \GatoGraphQL\GatoGraphQL\ContentProcessors\MarkdownContentParserInterface|null
-     */
-    private $markdownContentParser;
+    private ?MarkdownContentParserInterface $markdownContentParser = null;
 
     final public function setMarkdownContentParser(MarkdownContentParserInterface $markdownContentParser): void
     {
@@ -47,41 +44,33 @@ class SchemaTypeModuleResolver extends AbstractModuleResolver
 
     public function getName(string $module): string
     {
-        switch ($module) {
-            case self::SCHEMA_TESTING:
-                return \__('Schema Testing', 'gatographql-testing-schema');
-            default:
-                return $module;
-        }
+        return match ($module) {
+            self::SCHEMA_TESTING => \__('Schema Testing', 'gatographql-testing-schema'),
+            default => $module,
+        };
     }
 
     public function getDescription(string $module): string
     {
-        switch ($module) {
-            case self::SCHEMA_TESTING:
-                return \__('Addition of elements to the GraphQL schema to test the Gato GraphQL plugin', 'gatographql-testing-schema');
-            default:
-                return parent::getDescription($module);
-        }
+        return match ($module) {
+            self::SCHEMA_TESTING => \__('Addition of elements to the GraphQL schema to test the Gato GraphQL plugin', 'gatographql-testing-schema'),
+            default => parent::getDescription($module),
+        };
     }
 
     public function isHidden(string $module): bool
     {
-        switch ($module) {
-            case self::SCHEMA_TESTING:
-                return true;
-            default:
-                return parent::isHidden($module);
-        }
+        return match ($module) {
+            self::SCHEMA_TESTING => true,
+            default => parent::isHidden($module),
+        };
     }
 
     public function hasDocumentation(string $module): bool
     {
-        switch ($module) {
-            case self::SCHEMA_TESTING:
-                return false;
-            default:
-                return parent::hasDocumentation($module);
-        }
+        return match ($module) {
+            self::SCHEMA_TESTING => false,
+            default => parent::hasDocumentation($module),
+        };
     }
 }

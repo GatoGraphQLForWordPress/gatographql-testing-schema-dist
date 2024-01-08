@@ -6,5 +6,5 @@ namespace GatoGraphQL\TestingSchema\Constants;
 
 class Actions
 {
-    public const ENABLE_APP_STATE_FIELDS = 'enable-app-state-fields';
+    public final const ENABLE_APP_STATE_FIELDS = 'enable-app-state-fields';
 }
