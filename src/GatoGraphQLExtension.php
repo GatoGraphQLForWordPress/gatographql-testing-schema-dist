@@ -12,7 +12,7 @@ class GatoGraphQLExtension extends AbstractExtension
     /**
      * Plugin's namespace
      */
-    public final const NAMESPACE = __NAMESPACE__;
+    public const NAMESPACE = __NAMESPACE__;
 
     /**
      * Add Module classes to be initialized
