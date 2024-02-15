@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'GatoGraphQL\\TestingSchema\\Constants\\Actions' => $baseDir . '/src/Constants/Actions.php',
+    'GatoGraphQL\\TestingSchema\\Constants\\CustomHeaders' => $baseDir . '/src/Constants/CustomHeaders.php',
     'GatoGraphQL\\TestingSchema\\ContentProcessors\\ExtensionMarkdownContentRetrieverTrait' => $baseDir . '/src/ContentProcessors/ExtensionMarkdownContentRetrieverTrait.php',
     'GatoGraphQL\\TestingSchema\\ExtensionInitializationConfiguration' => $baseDir . '/src/ExtensionInitializationConfiguration.php',
     'GatoGraphQL\\TestingSchema\\ExtensionMetadata' => $baseDir . '/src/ExtensionMetadata.php',
@@ -16,6 +17,7 @@ return array(
     'GatoGraphQL\\TestingSchema\\Module' => $baseDir . '/src/Module.php',
     'GatoGraphQL\\TestingSchema\\ModuleResolvers\\ModuleResolverTrait' => $baseDir . '/src/ModuleResolvers/ModuleResolverTrait.php',
     'GatoGraphQL\\TestingSchema\\ModuleResolvers\\SchemaTypeModuleResolver' => $baseDir . '/src/ModuleResolvers/SchemaTypeModuleResolver.php',
+    'GatoGraphQL\\TestingSchema\\Overrides\\Log\\Logger' => $baseDir . '/src/Overrides/Log/Logger.php',
     'GatoGraphQL\\TestingSchema\\Services\\Blocks\\AbstractServerSideRegisteredOrNotSchemaTestingBlock' => $baseDir . '/src/Services/Blocks/AbstractServerSideRegisteredOrNotSchemaTestingBlock.php',
     'GatoGraphQL\\TestingSchema\\Services\\Blocks\\ExtensionBlockTrait' => $baseDir . '/src/Services/Blocks/ExtensionBlockTrait.php',
     'GatoGraphQL\\TestingSchema\\Services\\Blocks\\NotServerSideRegisteredSchemaTestingBlock' => $baseDir . '/src/Services/Blocks/NotServerSideRegisteredSchemaTestingBlock.php',

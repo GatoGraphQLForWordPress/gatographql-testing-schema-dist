@@ -3,11 +3,11 @@
         'name' => 'gatographql/testing-schema',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => NULL,
+        'reference' => null,
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(
-            0 => '2.0.x-dev',
+            0 => '2.1.x-dev',
         ),
         'dev' => false,
     ),
@@ -15,11 +15,11 @@
         'gatographql/testing-schema' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => NULL,
+            'reference' => null,
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(
-                0 => '2.0.x-dev',
+                0 => '2.1.x-dev',
             ),
             'dev_requirement' => false,
         ),

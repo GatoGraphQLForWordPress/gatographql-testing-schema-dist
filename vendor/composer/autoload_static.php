@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54
+class ComposerStaticInitb61116af7fafd30438d49dd4f72827e8
 {
     public static $prefixLengthsPsr4 = array (
         'G' => 
@@ -23,6 +23,7 @@ class ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'GatoGraphQL\\TestingSchema\\Constants\\Actions' => __DIR__ . '/../..' . '/src/Constants/Actions.php',
+        'GatoGraphQL\\TestingSchema\\Constants\\CustomHeaders' => __DIR__ . '/../..' . '/src/Constants/CustomHeaders.php',
         'GatoGraphQL\\TestingSchema\\ContentProcessors\\ExtensionMarkdownContentRetrieverTrait' => __DIR__ . '/../..' . '/src/ContentProcessors/ExtensionMarkdownContentRetrieverTrait.php',
         'GatoGraphQL\\TestingSchema\\ExtensionInitializationConfiguration' => __DIR__ . '/../..' . '/src/ExtensionInitializationConfiguration.php',
         'GatoGraphQL\\TestingSchema\\ExtensionMetadata' => __DIR__ . '/../..' . '/src/ExtensionMetadata.php',
@@ -31,6 +32,7 @@ class ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54
         'GatoGraphQL\\TestingSchema\\Module' => __DIR__ . '/../..' . '/src/Module.php',
         'GatoGraphQL\\TestingSchema\\ModuleResolvers\\ModuleResolverTrait' => __DIR__ . '/../..' . '/src/ModuleResolvers/ModuleResolverTrait.php',
         'GatoGraphQL\\TestingSchema\\ModuleResolvers\\SchemaTypeModuleResolver' => __DIR__ . '/../..' . '/src/ModuleResolvers/SchemaTypeModuleResolver.php',
+        'GatoGraphQL\\TestingSchema\\Overrides\\Log\\Logger' => __DIR__ . '/../..' . '/src/Overrides/Log/Logger.php',
         'GatoGraphQL\\TestingSchema\\Services\\Blocks\\AbstractServerSideRegisteredOrNotSchemaTestingBlock' => __DIR__ . '/../..' . '/src/Services/Blocks/AbstractServerSideRegisteredOrNotSchemaTestingBlock.php',
         'GatoGraphQL\\TestingSchema\\Services\\Blocks\\ExtensionBlockTrait' => __DIR__ . '/../..' . '/src/Services/Blocks/ExtensionBlockTrait.php',
         'GatoGraphQL\\TestingSchema\\Services\\Blocks\\NotServerSideRegisteredSchemaTestingBlock' => __DIR__ . '/../..' . '/src/Services/Blocks/NotServerSideRegisteredSchemaTestingBlock.php',
@@ -41,9 +43,9 @@ class ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit931067e9e818cb6f1fa2ee8321bd9e54::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb61116af7fafd30438d49dd4f72827e8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb61116af7fafd30438d49dd4f72827e8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb61116af7fafd30438d49dd4f72827e8::$classMap;
 
         }, null, ClassLoader::class);
     }
