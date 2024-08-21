@@ -7,7 +7,7 @@
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(
-            0 => '4.1.x-dev',
+            0 => '4.2.x-dev',
         ),
         'dev' => false,
     ),
@@ -19,7 +19,7 @@
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(
-                0 => '4.1.x-dev',
+                0 => '4.2.x-dev',
             ),
             'dev_requirement' => false,
         ),
