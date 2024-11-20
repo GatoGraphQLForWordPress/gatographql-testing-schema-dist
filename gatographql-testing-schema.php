@@ -3,7 +3,7 @@
 Plugin Name: Gato GraphQL - Testing Schema
 Plugin URI: https://github.com/GatoGraphQL/GatoGraphQL
 Description: Addition of elements to the GraphQL schema to test the Gato GraphQL plugin
-Version: 7.0.3
+Version: 7.0.4
 Requires at least: 6.1
 Requires PHP: 7.4
 Author: Gato GraphQL
@@ -52,7 +52,7 @@ add_action(
          *
          * @gatographql-readonly-code
          */
-        $extensionVersion = '7.0.3';
+        $extensionVersion = '7.0.4';
         $extensionName = \__('Gato GraphQL - Testing Schema', 'gatographql-testing-schema');
         /**
          * Important: Do not modify the formatting of this PHP code!
@@ -108,7 +108,7 @@ add_action(
          *
          * @gatographql-readonly-code
          */
-        $commitHash = 'b618226f69a21e34be6dd94bd1f5f88f3c018928';
+        $commitHash = '097aacd9ce642c25067dc078ecd3fe2817307cc6';
 
         // Load Composer’s autoloader
         require_once(__DIR__ . '/vendor/autoload.php');
